@@ -1,0 +1,181 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+section {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 100vh;
+}
+.sec1 {
+  background-image: url(images/bg1.avif);
+}
+.sec2 {
+  background-image: url(images/bg2.avif);
+}
+.sec3 {
+  background-image: url(images/bg3.avif);
+}
+.sec4 {
+  background-image: url(images/bg4.avif);
+}
+.sec5 {
+  background-image: url(images/bg5.avif);
+}
+.sec6 {
+  background-image: url(images/bg6.avif);
+}
+.sec7 {
+  background-image: url(images/bg7.jpeg);
+}
+.sec8 {
+  background-image: url(images/bg8.avif);
+}
+.sec9 {
+  background-image: url(images/bg9.avif);
+}
+.sec4 .main-content,
+.sec4 .main-content a,
+.sec6 .main-content,
+.sec6 .main-content a {
+  color: white;
+  font-weight: 600;
+}
+header {
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.header-left {
+  width: 10vw;
+}
+.header-middle {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  font-size: 14px;
+  font-weight: 600;
+}
+header ul {
+  display: flex;
+  gap: 3vw;
+  color: black;
+  list-style-type: none;
+}
+header ul li {
+  padding: 8px 16px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+header ul li:hover {
+  background-color: rgba(193, 193, 193, 0.177);
+}
+.header-right {
+  width: 10vw;
+}
+.header-right img {
+  width: 1.5vw;
+  margin-right: 6px;
+}
+.sec1 main {
+  padding-top: 3vw;
+}
+.main {
+  padding-top: 6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 50vh;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.main-text {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.order-btn,
+.demo-btn {
+  padding: 0.7vw 6vw;
+  font-size: 14px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.order-btn:hover,
+.demo-btn:hover,
+.learn-btn:hover,
+.truck-order-btn:hover {
+  opacity: 0.7;
+}
+.order-btn {
+  margin-right: 2vw;
+  background-color: white;
+  color: black;
+}
+.demo-btn {
+  background-color: black;
+  color: white;
+}
+.sec5 .buttons {
+  margin-top: 26vh;
+}
+.truck-order-btn {
+  border-top: 2px;
+  border-top-style: solid;
+  border-color: silver;
+}
+.truck-order-btn,
+.learn-btn {
+  padding: 0.7vw 6vw;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: silver;
+  transition: 0.3s;
+  background-color: black;
+}
+footer {
+  height: 60vh;
+  font-size: 12px;
+  text-align: center;
+  padding: 5vh 0;
+  color: rgb(208, 209, 210);
+  background-color: black;
+}
+.footer-content,
+.footer-links {
+  width: 40vw;
+  text-align: center;
+  margin: auto;
+}
+.footer-links a {
+  color: rgb(208, 209, 210);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  list-style-type: none;
+}
+.footer-content a {
+  color: rgb(208, 209, 210);
+  text-decoration: underline;
+  font-weight: 600;
+}
+.p-links {
+  transition: 0.3s;
+}
+.p-links:hover {
+  color: white;
+}
