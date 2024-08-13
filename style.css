@@ -8,14 +8,23 @@ a {
   text-decoration: none;
   color: white;
 }
+/* for snap scroll effect */
+html {
+  scroll-snap-type: y mandatory;
+}
+/* making the bg-image full size */
 section {
   background-size: cover;
   background-position: center center;
   text-align: center;
   width: 100%;
   height: 100vh;
+  scroll-snap-align: start;
 }
-
+footer {
+  scroll-snap-align: start;
+}
+/* changing the bg-image url for each section */
 .sec1 {
   background-image: url(images/bgnew-1.avif);
 }
@@ -44,6 +53,7 @@ section {
 .sec9 {
   background-image: url(images/bgnew-9.avif);
 }
+/* changing image for small screens */
 @media (max-width: 600px) {
   .sec1 {
       background-image: url(images/bg-mobile-1.avif);
@@ -80,6 +90,7 @@ section {
   color: white;
   font-weight: 600;
 }
+/* header will into 3 sections */
 header {
   padding: 1vw;
   display: flex;
@@ -109,29 +120,54 @@ header ul li {
   border-radius: 3px;
   transition: 0.3s;
 }
-header ul li:hover {
-  background-color: rgba(193, 193, 193, 0.177);
+header ul li:hover,
+.header-right img:hover {
+  background-color: rgba(193, 193, 193, 0.077);
 }
 .header-right {
   width: 10vw;
 }
 .header-right img {
   width: 1.5vw;
+  transition: 0.3s;
   margin-right: 6px;
+  padding: 5px;
 }
 .sec1 main {
-  padding-top: 3vw;
+  padding-top: 1vw;
 }
 .main {
   padding-top: 6vw;
   display: flex;
   flex-direction: column;
-  gap: 50vh;
+  gap: 60vh;
   font-size: 1.3rem;
   font-weight: 500;
 }
+.main-link {
+  position: relative;
+}
+
+.main-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+.main-link:hover::after {
+  transform: scaleY(2);
+}
+
+sup {
+  font-size: 8px;
+}
 .main-text {
-  font-size: 2.9rem;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 .order-btn,
